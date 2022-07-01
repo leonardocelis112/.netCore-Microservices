@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1700.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{10F95F21-6189-481D-AA11-C19757685853}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangoWeb", "MangoWeb\MangoWeb.csproj", "{0A6DFA99-A1DA-451D-9E85-CC88F93A413C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{1935C1BD-2148-4827-A06A-F65C822815E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangoServices.ProductAPI", "MangoServices.ProductAPI\MangoServices.ProductAPI.csproj", "{80257CFE-4BE9-436B-88E1-BE96973377D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A6DFA99-A1DA-451D-9E85-CC88F93A413C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A6DFA99-A1DA-451D-9E85-CC88F93A413C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A6DFA99-A1DA-451D-9E85-CC88F93A413C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A6DFA99-A1DA-451D-9E85-CC88F93A413C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80257CFE-4BE9-436B-88E1-BE96973377D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80257CFE-4BE9-436B-88E1-BE96973377D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80257CFE-4BE9-436B-88E1-BE96973377D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80257CFE-4BE9-436B-88E1-BE96973377D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78942852-D1E7-4A25-8A12-6D2A7888336B}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0A6DFA99-A1DA-451D-9E85-CC88F93A413C} = {10F95F21-6189-481D-AA11-C19757685853}
+		{80257CFE-4BE9-436B-88E1-BE96973377D5} = {1935C1BD-2148-4827-A06A-F65C822815E7}
+	EndGlobalSection
+EndGlobal
