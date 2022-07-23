@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using MangoServices.ProductAPI.Models.Dto;
 using MangoServices.ProductAPI.Models.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -22,7 +23,9 @@ namespace MangoServices.ProductAPI.Controllers
             this._response = new ResponseDto();
         }
 
+        
         [HttpGet]
+        [Authorize]
         public async Task<object> Get() {
             try
             {
@@ -39,6 +42,7 @@ namespace MangoServices.ProductAPI.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         [Route("{id}")]
         public async Task<object> Get(int id)
         {
@@ -57,6 +61,7 @@ namespace MangoServices.ProductAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<object> Post([FromBody] ProductDto productDto)
         {
             try
@@ -74,6 +79,7 @@ namespace MangoServices.ProductAPI.Controllers
         }
 
         [HttpPut]
+        [Authorize]
         public async Task<object> Put([FromBody] ProductDto productDto)
         {
             try
@@ -91,6 +97,8 @@ namespace MangoServices.ProductAPI.Controllers
         }
 
         [HttpDelete]
+        [Authorize(Roles = "Admin")]
+        [Route("{id}")]
         public async Task<object> Delete(int id)
         {
             try
